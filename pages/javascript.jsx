@@ -20,7 +20,7 @@ const Javascript = ({data}) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let r = await fetch(
     `https://api.github.com/search/repositories?q=stars:%3E1+language:javascript`
   );

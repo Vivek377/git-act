@@ -20,7 +20,7 @@ function Home({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let r = await fetch(`https://api.github.com/search/repositories?q=stars:%3E1+language:all`);
   let d = await r.json();
   return {
