@@ -13,7 +13,7 @@ const Html = ({ data }) => {
     >
       {data.map((ele) => (
         <GridItem key={ele.id}>
-          <CardComp data={data} />
+          <CardComp data={ele} />
         </GridItem>
       ))}
     </Grid>
